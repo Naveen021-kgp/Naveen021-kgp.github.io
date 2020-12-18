@@ -1,37 +1,339 @@
-## Welcome 
 
-You can use the [editor on GitHub](https://github.com/Naveen021-kgp/Naveen021-kgp.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+<!DOCTYPE html>
+<html lang="en"  data-theme='red'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naveen</title>
+    <link rel="shortcut icon" href="./Media/logo.png" type="image/x-icon">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Lobster&family=Merienda+One&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./styles/main.css">
 
-### Markdown
+    <script src="./jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
-```markdown
-Syntax highlighted code block
+</head>
+<body>
 
-# Header 1
-## Header 2
-### Header 3
+    
+    <div class="theme-btn" id='theme-btn'><i class="fa fa-paint-brush"></i></div>
+    <div class="theme-selector" id='theme-selector'>
+        <h2>Didn't like the Theme? <br> Customize it as per your will!</h2>
+        <span id='close-theme'>&times;</span>
+        <div class="color-sliders">
+            <div class="red-slider slider-cont"><input type="range" name="red" id="r-set" min="10" max="245" class='slider' value='0'></div>
+            <div class="green-slider  slider-cont"><input type="range" name="green" id="g-set" min="10" max="245" class='slider' value='180'></div>
+            <div class="blue-slider  slider-cont"><input type="range" name="blue" id="b-set" min="10" max="245" class='slider' value='204'></div>
+        </div>
+    </div>
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+    <header>
+        <div class="nav-ham" id="nav-ham">
+            <div class="nav-ham-line"></div>
+        </div>
 
-**Bold** and _Italic_ and `Code` text
+        <nav class="nav-bar" id="nav-bar">    
+            <ul class="nav-list">
+                <a href="#home" class="nav-link" style="border-bottom-left-radius: 3rem;">
+                    <li class="nav-list-item" style="border-bottom-left-radius: 3rem;">
+                        <i class="fa fa-home"></i> 
+                        <span class="nav-label">Home</span>    
+                    </li>
+                </a>
+                
+                <a href="#about" class="nav-link">
+                    <li class="nav-list-item">
+                            <i class="fa fa-info-circle"></i> 
+                            <span class="nav-label">About</span>
+                    </li>
+                </a>
 
-[Link](url) and ![Image](src)
-```
+                <a href="#project" class="nav-link">
+                    <li class="nav-list-item">
+                            <i class="fa fa-code"></i> 
+                            <span class="nav-label">Projects</span>
+                    </li>
+                </a>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+                <li class="nav-list-item nav-more">
+                        <i class="fa fa-ellipsis-h"></i> 
+                        <span class="nav-label">More</span>
 
-### Jekyll Themes
+                    <ul class="nav-more-list">
+                        <a href="#contact" class="nav-link">
+                            <li class="nav-more-item">
+                                    <i class="fa fa-address-book-o"></i> 
+                                    <span class="nav-label">Contact</span>
+                            </li>
+                        </a>
+                        <a href="#" class="nav-link">        
+                            <li class="nav-more-item">
+                                    <i class="fa fa-rocket"></i> 
+                                    <span class="nav-label">Explore me</span>
+                            </li>
+                        </a>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Naveen021-kgp/Naveen021-kgp.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+    <main>
+        <div id="home">
+            <div class="main-cont">
+                <div class="home-text">
+                    <div class="name">
+                        <span>N</span>
+                        <span>a</span>
+                        <span>v</span>
+                        <span>e</span>
+                        <span>e</span>
+                        <span>n</span>
+                        <span>&nbsp;</span>
+                        <span>R</span>
+                        <span>e</span>
+                        <span>d</span>
+                        <span>d</span>
+                        <span>y</span>
+                        <span>&nbsp;</span>
+                        <span>K</span>
+                        <span>o</span>
+                        <span>l</span>
+                        <span>k</span>
+                        <span>u</span>
+                        <span>n</span>
+                        <span>d</span>
+                        <span>a</span>
+                    </div>
+                    <div class="intro">I am a </div>
+                    <div class="checkprojects"><a href="#project" class='proj-link'>Check out my projects</a></div>
 
-### Support or Contact
+                    <div class="quote-pc">“ Perfection is achieved not when there is nothing more to add, <br> but rather when there is nothing more to take away.” <br> – Antoine de Saint-Exupery</div>
+                </div>
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+                <div class="image-card">
+                    <img src="./Media/me1.jpg" alt="me" class='front-card'>
+                    <img src="./Media/me2.jpg" alt="me" class='back-card'>
+                </div>
+            </div>
+            <div class="quote-mob">“ Perfection is achieved not when there is nothing more to add, <br> but rather when there is nothing more to take away.” <br><span>– Antoine de Saint-Exupery</span></div>
+        </div>
+
+
+        <div id="about">
+            <h1 class='about-head'><span>Who</span> am I?</h1>
+
+            <div class="about-intro">
+                I am a second year undergraduate student at I.I.T. Kharagpur 
+                pursuing Ocean Engineering and Naval Architecture. 
+            </div>
+            
+
+            <h1 class='about-head'><span>S</span>kills</h1>
+            <div class="skills-btn">
+                <div class='skill-btn active' id="lang">General</div>
+                <div class='skill-btn' id="webd">Web Development</div>
+                <div class='skill-btn' id="ml">Machine Learning</div>
+                <div class='skill-btn' id="tech">Python</div>
+            </div>
+            <div class="skills-cont" id='skills-cont'>
+                <div class='skills-cloud active' id="skills-l"></div>
+                <div class='skills-cloud' id="skills-w"></div>
+                <div class='skills-cloud' id="skills-m"></div>
+                <div class='skills-cloud' id="skills-t"></div>
+            </div>
+        </div>
+
+        <div id="project">
+            <h1 class="project-head">Check out what i am upto</h1>
+
+            <div class="cards-cont">
+
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-cover-top"></div>
+                        <div class="card-cover-bottom"></div>
+                        <div class="card-cover-image"><img src="./Media/quiz.jpg" alt="quiz"></div>
+
+                        <div class="description">
+                            <h2 class="heading">Ask Me Now</h2>
+                            <div class="details">'Ask me now' is a quizzing platform with 4 difficulty levels. After each level, a detailed summary along with correct answers will be revealed. You can access the leaderboard and see where you stand among the global users. <br><br> The project is still under development with main focus now on additional features such as remember me, profile section, chat app and challenges.</div>
+                            <div class="link-cont">
+                                <div class="link"><a href="http://askmenowww.000webhostapp.com/" class="link-a" target='_blank'>Visit Project</a></div>
+                                <div class="link"><a href="https://github.com/Sahil-k1509/AskMeNow" class="link-a" target='_blank'>Source Code</a></div>
+                            </div>
+                            <div class="tags">
+                                <h3 class="tag-head">Tags:</h3>
+                                <ul class="tag-list">
+                                    <li class="tag">PHP</li>
+                                    <li class="tag">MySQL</li>
+                                    <li class="tag">Frontend</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-cover-top"></div>
+                        <div class="card-cover-bottom"></div>
+                        <div class="card-cover-image"><img src="./Media/flappybird.jpg" alt=""></div>
+
+                        <div class="description">
+                            <h2 class="heading">Flappy Bird AI</h2>
+                            <div class="details">A flappy bird game written with help of Pygame module of python. Flappy Bird is a tapping game where main objective is to cross as much distance as possible without touching roof, ground or pipes that are randomly generated. <br><br> A NEAT based algorithm is implemented in the game so that computer can learn to play the game itself.</div>
+                            <div class="link-cont">
+                                <div class="link"><a href="https://github.com/Sahil-k1509/FlappyBirdAI" class="link-a" target='_blank'>Source Code</a></div>
+                            </div>
+                            <div class="tags">
+                                <h3 class="tag-head">Tags:</h3>
+                                <ul class="tag-list">
+                                    <li class="tag">NEAT</li>
+                                    <li class="tag">Python</li>
+                                    <li class="tag">Pygame</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-cover-top"></div>
+                        <div class="card-cover-bottom"></div>
+                        <div class="card-cover-image"><img src="./Media/palindrome.jpg" alt=""></div>
+
+                        <div class="description">
+                            <h2 class="heading">Sum of Palindromes</h2>
+                            <div class="details">An implementation of a research paper by Javier Cilleruelo, Florian Luca and Lewis Baxter proves that any positive integer can be expressed as a sum of three palindrome numbers. The proof is in a form of 42 page algorithm which is implemented in this program. <br><br> The program will ask you to enter a number and display the three palindromes. There is also a test file which will compare this algorithm with brute force approach to find three palindromes.</div>
+                            <div class="link-cont">
+                                <div class="link"><a href="https://github.com/Sahil-k1509/sum_of_palindromes" class="link-a" target='_blank'>Source Code</a></div>
+                            </div>
+                            <div class="tags">
+                                <h3 class="tag-head">Tags:</h3>
+                                <ul class="tag-list">
+                                    <li class="tag">Maths</li>
+                                    <li class="tag">Python</li>
+                                    <li class="tag">Research</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-cover-top"></div>
+                        <div class="card-cover-bottom"></div>
+                        <div class="card-cover-image"><img src="./Media/resume.jpg" alt=""></div>
+
+                        <div class="description">
+                            <h2 class="heading">Resume Maker</h2>
+                            <div class="details">It is a standard Resume Builder template where you can edit the placeholders and create your job resume and download it in pdf format. You can delete points if they are not applicable or you can add more points and blocks if you wish. The template is not fixed right now and will keep getting better.</div>
+                            <div class="link-cont">
+                                <div class="link"><a href="https://Sahil-k1509.github.io/ResumeMaker" class="link-a" target='_blank'>Visit Project</a></div>
+                                <div class="link"><a href="https://github.com/Sahil-k1509/ResumeMaker" class="link-a" target='_blank'>Source Code</a></div>
+                            </div>
+                            <div class="tags">
+                                <h3 class="tag-head">Tags:</h3>
+                                <ul class="tag-list">
+                                    <li class="tag">Resume Template</li>
+                                    <li class="tag">HTML</li>
+                                    <li class="tag">Javascript</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-cover-top"></div>
+                        <div class="card-cover-bottom"></div>
+                        <div class="card-cover-image"><img src="./Media/blog.jpg" alt=""></div>
+
+                        <div class="description">
+                            <h2 class="heading">Web blog</h2>
+                            <div class="details">A flask based blogging app written with help of Flask module of python. You can create account, login, post and delete blogs. Read others blogs, currently there is no option to upvote or comment but it may be added in the PHP version of the same which is a future project.</div>
+                            <div class="link-cont">
+                                <div class="link"><a href="https://github.com/Sahil-k1509/Web_blog" class="link-a" target='_blank'>Source Code</a></div>
+                            </div>
+                            <div class="tags">
+                                <h3 class="tag-head">Tags:</h3>
+                                <ul class="tag-list">
+                                    <li class="tag">Flask</li>
+                                    <li class="tag">Web dev</li>
+                                    <li class="tag">Python</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-cover-top"></div>
+                        <div class="card-cover-bottom"></div>
+                        <div class="card-cover-image"><img src="./Media/pikachu.jpg" alt=""></div>
+
+                        <div class="description">
+                            <h2 class="heading">CMD Pokemon</h2>
+                            <div class="details">CMD Pokemon is a python based terminal(command line) pokemon game with all the features present in a standard GUI game. <br><br>You can go around the map and catch pokemons. Pokemons level up as they gain more experience and they will evolve into a stronger pokemon and learn new attacks as well. You can fight wild pokemons or you can duel with gym leaders to get gym badges. You can visit shops to buy pokeballs and power stones and use them on your pokemons to make them stronger. You may also encounter some legendary pokemons on the way ! <br><br>Features that are currently in development: <ul><li>More pokemon trainers to fight</li><li>Indigo league opening once trainer gathers all 8 gym badges</li><li>More attacks and pokemons</li><li>Mini games</li><li>Health potions and other usable items.</li></ul></div>
+                            <div class="link-cont">
+                                <div class="link"><a href="https://github.com/Sahil-k1509/cmd_pokemon" class="link-a" target='_blank'>Source Code</a></div>
+                            </div>
+                            <div class="tags">
+                                <h3 class="tag-head">Tags:</h3>
+                                <ul class="tag-list">
+                                    <li class="tag">Python</li>
+                                    <li class="tag">OOPs</li>
+                                    <li class="tag">Game Dev</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="contact">
+            <h1 class='contact-head'><span>L</span>et's <span>b</span>e <span>i</span>n <span>t</span>ouch</h1>
+            
+            <h2>Follow me on social media <i class="fa fa-long-arrow-down"></i></h2>
+            <div class="social-med">
+                <div class="soc-logo"><a href='https://www.facebook.com/profile.php?id=100039444023014' target='_blank' class="fa fa-facebook-square"></a></div>
+                <div class="soc-logo"><a href='https://github.com/Sahil-k1509' target='_blank' class="fa fa-github"></a></div>
+                <div class="soc-logo"><a href='https://www.instagram.com/selmon_jong_un/' target='_blank' class="fa fa-instagram"></a></div>
+                <div class="soc-logo"><a href='https://www.linkedin.com/in/sahil-bairagi-17ab46197/' target='_blank' class="fa fa-linkedin-square"></a></div>
+                <div class="soc-logo"><a href='mailto:sahilbairagi319@gmail.com' target='_blank' class="fa fa-envelope-o"></a></div>
+            </div>
+
+            <h2>Or Write me a message</h2>
+
+            <div class="contact-form">
+                <form action="#">
+                    <div class="input-container">
+                        <label class='label' for="name" id='name-lab'>Your Name</label>
+                        <input class='input' type="text" name='name' placeholder="Your Name" id='cont-name' />
+                    </div>
+                    <div class="input-container">
+                        <label class='label' for="email" id='em-lab'>Your Email</label>
+                        <input class='input' type="text" name='email' placeholder="Your Email" id='cont-email' />
+                    </div>
+                    <div class="message-container input-container">
+                        <label for="message" class="label" id='msg-lab'>Your Message</label>
+                        <textarea name="message" id="cont-msg" class="message" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class='submit-btn' name='submit'>Send <i class="fa fa-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./JS/script.js"></script>
+    <script src="./JS/app.js" defer></script>
+</body>
+</html>
+
